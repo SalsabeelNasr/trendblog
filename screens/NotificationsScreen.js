@@ -1,6 +1,6 @@
 import React from 'react';
 import { View } from 'react-native';
-import UserNotifications from '../components/user-notifications/user-notifications';
+import Notifications from '../components/notifications/notifications';
 
 export default class NotificationsScreen extends React.Component {
   static navigationOptions = {
@@ -9,7 +9,7 @@ export default class NotificationsScreen extends React.Component {
 
   render() {
     return <View>
-      <UserNotifications />
+      <Notifications />
     </View>;
   }
 }

@@ -1,7 +1,7 @@
 
 import { StyleSheet } from 'react-native';
 
-export const userNotificationsStyles = StyleSheet.create({
+export const notificationsStyles = StyleSheet.create({
     container: {
         flex: 1,
         paddingTop: 15,

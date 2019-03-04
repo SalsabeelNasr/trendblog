@@ -4,7 +4,7 @@ import { View } from 'react-native';
 import UserStatus from '../components/profile/user-status/user-status';
 import UserMenu from '../components/profile/user-menu/user-menu';
 
-export default class SettingsScreen extends React.Component {
+export default class ProfileScreen extends React.Component {
   static navigationOptions = {
     title: 'Profile',
   };
