@@ -1,5 +1,8 @@
 import React from 'react';
-import UserProfileHeader from '../components/user-profile-header/user-profile-header';
+import UserProfileHeader from '../components/profile/user-profile-header/user-profile-header';
+import { View } from 'react-native';
+import UserStatus from '../components/profile/user-status/user-status';
+import UserMenu from '../components/profile/user-menu/user-menu';
 
 export default class SettingsScreen extends React.Component {
   static navigationOptions = {
@@ -7,6 +10,10 @@ export default class SettingsScreen extends React.Component {
   };
 
   render() {
-    return <UserProfileHeader />;
+    return <View>
+      <UserProfileHeader />
+      <UserStatus />
+      <UserMenu></UserMenu>
+    </View>;
   }
 }

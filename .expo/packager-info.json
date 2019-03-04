@@ -1,9 +1,9 @@
 {
   "devToolsPort": 19002,
   "expoServerPort": 19000,
-  "packagerPort": null,
-  "packagerPid": null,
+  "packagerPort": 19001,
+  "packagerPid": 6252,
   "expoServerNgrokUrl": "https://gj-edj.anonymous.trendblog.exp.direct",
   "packagerNgrokUrl": "https://packager.gj-edj.anonymous.trendblog.exp.direct",
-  "ngrokPid": 17092
+  "ngrokPid": 17144
 }

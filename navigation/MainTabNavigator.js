@@ -4,8 +4,9 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
-import LinksScreen from '../screens/LinksScreen';
+import UploadScreen from '../screens/UploadScreen';
 import SettingsScreen from '../screens/SettingsScreen';
+import NotificationsScreen from '../screens/NotificationsScreen';
 
 const HomeStack = createStackNavigator({
   Home: HomeScreen,
@@ -21,11 +22,11 @@ HomeStack.navigationOptions = {
   ),
 };
 
-const LinksStack = createStackNavigator({
-  Links: LinksScreen,
+const UploadStack = createStackNavigator({
+  upload: UploadScreen,
 });
 
-LinksStack.navigationOptions = {
+UploadStack.navigationOptions = {
   tabBarLabel: 'upload',
   tabBarIcon: ({ focused }) => (
     <TabBarIcon
@@ -49,8 +50,21 @@ SettingsStack.navigationOptions = {
   ),
 };
 
+const NotificationsStack = createStackNavigator({
+  Notifications: NotificationsScreen,
+});
+NotificationsStack.navigationOptions = {
+  tabBarLabel: 'notifications',
+  tabBarIcon: ({ focused }) => (
+    <TabBarIcon
+      focused={focused}
+      name={Platform.OS === 'ios' ? 'ios-notifications-outline' : 'md-notifications'}
+    />
+  ),
+}
 export default createBottomTabNavigator({
   HomeStack,
-  LinksStack,
+  UploadStack,
   SettingsStack,
+  NotificationsStack
 });
