@@ -26,7 +26,6 @@ export const userProfileHeaderStyles = StyleSheet.create({
         color: '#a39f9f',
         fontSize: 14,
         backgroundColor: 'transparent',
-        marginRight: 15
     },
     joinedText: {
         paddingTop: 3,
