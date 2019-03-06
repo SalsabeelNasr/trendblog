@@ -5,9 +5,10 @@ import LoginButton from '../components/login/login-button/login-button';
 import { FacebookApi } from '../api/login/facebook';
 import { GoogleApi } from '../api/login/google';
 
-
 export default class LoginScreen extends Component {
-
+    constructor(props) {
+        super(props);
+    }
     static navigationOptions = {
         header: null,
     };
@@ -17,9 +18,7 @@ export default class LoginScreen extends Component {
     onGooglePress = async () => {
         try {
             const token = await GoogleApi.loginAsync();
-            await this.props.authStore.login(token, 'GOOGLE');
-            // await AsyncStorage.setItem('userToken', 'abc');
-            this.props.navigation.navigate('App');
+            this.props.navigation.navigate(token ? 'App' : 'Auth');
         } catch (error) {
             console.log('error', error);
         }
