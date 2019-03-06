@@ -23,7 +23,11 @@
       "**/*"
     ],
     "ios": {
+      "bundleIdentifier": "com.trendblog.com",
       "supportsTablet": true
+    },
+    "android": {
+      "package": "com.trendblog.com"
     },
     "facebookAppId": "240536953465222",
     "facebookScheme": "fb240536953465222",
