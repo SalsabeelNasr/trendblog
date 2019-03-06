@@ -38,7 +38,6 @@ export default class LoginScreen extends Component {
         // console.log('props', this.props);
         return (
             <View style={{ flex: 1, flexDirection: 'column', justifyContent: 'center', marginTop: 20 }}>
-
                 <LoginButton onPress={this.onGooglePress} type="google">
                     <Text>Login with Google</Text>
                 </LoginButton>
