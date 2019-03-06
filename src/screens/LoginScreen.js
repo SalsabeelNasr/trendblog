@@ -19,7 +19,7 @@ export default class LoginScreen extends Component {
             const token = await GoogleApi.loginAsync();
             await this.props.authStore.login(token, 'GOOGLE');
             // await AsyncStorage.setItem('userToken', 'abc');
-            // this.props.navigation.navigate('App');
+            this.props.navigation.navigate('App');
         } catch (error) {
             console.log('error', error);
         }
